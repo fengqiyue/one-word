@@ -1,0 +1,15 @@
+.fl 
+{
+	float:right;
+}
+
+.content-right
+{
+	text-align: right;
+}
+
+.content-center
+{
+	position: relative;
+	top: 100px;	
+} 
