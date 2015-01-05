@@ -1,0 +1,96 @@
+﻿<DOCTYPE HTML>
+<html>
+<head>
+<style type="text/css">
+.blogs 
+{ 
+	width: 670px; 
+	margin: 20px auto; 
+	position: relative; 
+}
+
+.blogs:before 
+{
+	content: ""; 
+	width: 2px; 
+	height: 100%; 
+	top: 0; 
+	bottom: 0; 
+	right: 0; 
+	background: #000; 
+	position: absolute 
+} /* 右侧的黑色竖轴线 */
+
+.bloglist 
+{
+	
+ 	background: #222; 
+ 	box-shadow: 0px 1px 0px rgba(255,255,255,.1), inset 0px 1px 1px rgba(0,0,0,.7); 
+ 	width: 630px; 
+ 	color: #b9b9b9; 
+ 	border-radius: 6px; 
+}
+
+.bloglist:before 
+{
+	content: ""; 
+	width: 0px; 
+	height: 0px;
+	border-style: solid; 
+	border-width: 0px 0 20px 22px; 
+	border-color: transparent transparent transparent #111; 
+	position: absolute; 
+	left: 630px; 
+	top: 40px; 
+}/* 三角形 */
+
+.bloglist:after { 
+	content: ""; 
+	width: 10px; 
+	height: 10px; 
+	border-radius: 50%; 
+	position: absolute; 
+	left: 662px; top: 36px; 
+	background: #000;
+	 border: 2px solid #333; 
+	 z-index: 10; 
+	}/* 圆形 */
+
+.bloglist:hover:after 
+{
+ 	border-color: #ccc; 
+ }/* 鼠标放上去 圆形边框变色 */
+</style>
+
+</head>
+
+<body>
+
+
+<div class="blogs">
+
+	<div class="bloglist">
+
+		<h2>我希望我的爱情是这样的</h2>
+
+	    	<ul>
+			<p> 我希望我的爱情是这样的，相濡以沫，举案齐眉，平淡如水。我在岁月中找到他，依靠他，将一生交付给他。做他的妻子，他孩子的母亲，为他做饭，洗衣服，缝一颗掉了的纽扣。然后，我们一起在时光中变老。</p>
+	    	</ul>
+
+	</div>
+
+
+	<div class="bloglist">
+
+		<h2>2</h2>
+
+		<ul>
+			<p> the second </p>
+		</ul>
+
+	</div>
+</div>
+
+
+</body>
+</html>

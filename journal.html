@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet"  href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
 	<link rel="stylesheet"  href="mystyle.css">
+	<link rel="stylesheet"  href="timeline.css">
 	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
 </head>
@@ -19,6 +20,46 @@
 		</div>
 
 		<div data-role="content">
+			<div class="container">
+
+		                <div class="main">
+		                        <ul class="cbp_tmtimeline">
+		                                <li>
+		                                        <time class="cbp_tmtime" datetime="2013-04-10 18:30">
+		                                        <span>4/10/13</span> <span>18:30</span></time>
+
+		                                        <div class="cbp_tmicon cbp_tmicon-phone"></div>
+
+		                                        <div class="cbp_tmlabel">
+		                                               
+		                                                <p>
+		                                                该属性会影响行框的布局。在应用到一个块级元素时，它定义了该元素中基线之间的最小距离而不是最大距离。
+
+line-height 与 font-size 的计算值之差（在 CSS 中成为“行间距”）分为两半，分别加到一个文本行内容的顶部和底部。可以包含这些内容的最小框就是行框。
+
+原始数字值指定了一个缩放因子，后代元素会继承这个缩放因子而不是计算值。
+		                                                </p>
+		                                        </div>
+		                                </li>
+
+		                                <li>
+		                                        <time class="cbp_tmtime" datetime="2013-04-10 18:30">
+		                                        <span>4/10/13</span> <span>18:30</span></time>
+
+		                                        <div class="cbp_tmicon cbp_tmicon-phone"></div>
+
+		                                        <div class="cbp_tmlabel">
+		                                                <h2>
+		                                                2
+		                                                </h2>
+		                                                <p>
+		                                                secondsecondsecond
+		                                                </p>
+		                                        </div>
+		                                </li>
+		                         </ul>
+		                </div>
+		              </div>
 		</div>
 
 		<div data-role="footer" data-position="fixed"data-theme="b">
@@ -65,7 +106,7 @@
 
 			<form action="save.php" enctype="multipart/form-data" data-ajax="false" method="post" >
 				<input type="text" name="words" id="words" placeholder="在这里写你的日记" >
-				<div id="savejournal" data-role="button" data-inline="true" class="fl">save</div>
+				<a href=#show data-transition="slide"  data-direction="reverse"><div id="savejournal" data-role="button" data-inline="true" class="fl">save</div></a>
 			</form>
 		</div>
 
